@@ -55,8 +55,7 @@ See [INSTALL.md](INSTALL.md) for step-by-step instructions.
 
 | Key | Action |
 |-----|--------|
-| P | Toggle calculator overlay |
-| Escape | Close calculator |
+| ALT + Shift + P | Toggle calculator overlay |
 
 ## Privacy
 
