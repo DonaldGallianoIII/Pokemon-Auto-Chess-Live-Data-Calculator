@@ -47,7 +47,7 @@ See [INSTALL.md](INSTALL.md) for step-by-step instructions.
 
 1. Go to [pokemon-auto-chess.com](https://pokemon-auto-chess.com)
 2. Start or join a game
-3. Press **P** to toggle the calculator overlay
+3. Press **ALT + Shift + P** to toggle the calculator overlay
 4. Enter your player name for personalized tracking
 5. Select your target Pokemon and rarity
 
