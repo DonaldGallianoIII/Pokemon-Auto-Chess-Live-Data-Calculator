@@ -33,9 +33,9 @@ This extension makes **zero** network requests. There are:
 ## Permissions
 | Permission | Why It's Needed |
 |------------|-----------------|
+| activeTab | Inject calculator overlay on the active tab |
+| storage | Save your preferences locally |
 | Host (pokemon-auto-chess.com) | Extension only runs on this site |
-
-The extension uses content scripts to inject the calculator overlay and read game state. No additional permissions are required.
 
 ## Contact
 Questions or concerns? Reach me on Discord: **@Deuce222X**
