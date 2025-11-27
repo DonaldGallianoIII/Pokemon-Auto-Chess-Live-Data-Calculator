@@ -50,8 +50,6 @@ unzip pac-live-data-v2_17_0-store-ready.zip -d pac-extension
 3. Press **Enter**
 4. Toggle **Developer mode** ON (top-right corner)
 
-![Developer Mode Toggle](https://i.imgur.com/example.png)
-
 ---
 
 ## Step 4: Load the Extension
@@ -68,7 +66,7 @@ unzip pac-live-data-v2_17_0-store-ready.zip -d pac-extension
 
 1. Go to [**pokemon-auto-chess.com**](https://pokemon-auto-chess.com)
 2. Start or join a game
-3. Press **P** to open the calculator
+3. Press **Alt + Shift + P** to open the calculator
 4. Enter your player name in settings
 5. Start tracking!
 
@@ -92,7 +90,6 @@ When a new version is released:
 |---------|----------|
 | "Load unpacked" button not visible | Make sure **Developer mode** is ON |
 | Extension not appearing on game | Refresh the game page (F5) |
-| Calculator won't open with P | Click inside the game window first, then press P |
 | Data not updating | Check that your player name matches exactly (case-sensitive) |
 | Extension shows error | Make sure you selected the folder containing `manifest.json`, not the ZIP file |
 
