@@ -2,7 +2,7 @@
 
 A Chrome extension that provides real-time probability calculations for [Pokemon Auto Chess](https://pokemon-auto-chess.com).
 
-![Version](https://img.shields.io/badge/version-2.17.0-blue)
+![Version](https://img.shields.io/badge/version-2.19.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Features
@@ -13,14 +13,21 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 - **Gold cost estimation** based on your roll strategy
 - **Pool tracking** showing copies remaining vs total
 
+### 🌍 Smart Pokemon Detection
+- **Hover-to-detect** regional and add pick Pokemon from game icons
+- **Conflict resolution** — click to confirm when multiple Pokemon match (e.g., Pidgey/Starly/Pidove)
+- **Auto-sync** detection results to probability calculations
+- **Wild handling** — wild regionals/additionals update correct pool counts
+
 ### 📊 Counter Intelligence Panel
 - See all 8 players' boards, benches, and shops at a glance
-- **Contested detection** - warns when opponents are targeting the same Pokemon
+- **Contested detection** — warns when opponents are targeting the same Pokemon
 - **Flash alerts** when your target appears in YOUR shop
 
 ### 🎯 Team Tracker
 - Track multiple target Pokemon simultaneously
 - **MAXED / IMPOSSIBLE / DANGER** warnings for each target
+- **Regional/Portal availability** checking
 - Progress tracking with copies owned vs needed
 
 ### 🌿 Wild Pokemon Support
@@ -33,15 +40,22 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 - Reads game state in real-time
 - Stage tracking with PVE/PVP indicator
 - Auto-updates as the game progresses
-- Works entirely offline - **zero data transmitted**
+- Works entirely offline — **zero data transmitted**
 
 ## Installation
 
 ### Chrome Web Store (Recommended)
-*Coming soon - pending review*
+*Coming soon — pending review*
 
 ### Manual Installation (Beta Testing)
-See [INSTALL.md](INSTALL.md) for step-by-step instructions.
+
+1. **Download** the latest ZIP from [Releases](../../releases)
+2. **Extract** the ZIP to a folder
+3. Open Chrome and go to `chrome://extensions`
+4. Enable **Developer mode** (top-right toggle)
+5. Click **"Load unpacked"** and select the extracted folder
+6. Navigate to [pokemon-auto-chess.com](https://pokemon-auto-chess.com)
+7. Press **ALT + Shift + P** to toggle the calculator
 
 ## Usage
 
@@ -50,12 +64,17 @@ See [INSTALL.md](INSTALL.md) for step-by-step instructions.
 3. Press **ALT + Shift + P** to toggle the calculator overlay
 4. Enter your player name for personalized tracking
 5. Select your target Pokemon and rarity
+6. **Hover** the regional/add pick icons to detect Pokemon
+7. **Click** to resolve conflicts when multiple Pokemon match
 
-## Keyboard Shortcuts
+## Controls
 
-| Key | Action |
-|-----|--------|
+| Control | Action |
+|---------|--------|
 | ALT + Shift + P | Toggle calculator overlay |
+| CLR button | Clear all state (target, team, detection) |
+| Redetect button | Reset detection for new portal |
+| Hover game icons | Detect regional/add pick Pokemon |
 
 ## Privacy
 
@@ -74,16 +93,32 @@ See [PRIVACY.md](PRIVACY.md) for full details.
 
 ## Changelog
 
-### v2.17.0
-- Wild Pokemon auto-detection (67 Pokemon families)
-- Wild stars counting (was counting units, now correctly counts stars)
+### v2.19.0 — Smart Detection System
+- **NEW:** Slot-based regional/add pick detection with conflict resolution
+- **NEW:** Click-to-confirm when multiple Pokemon match same rarity+types
+- **NEW:** Detection syncs to probability calculations
+- **NEW:** Team Tracker checks regional/additional availability
+- **NEW:** CLR button to clear all state
+- **NEW:** MAX (70ms) polling speed option
+- **NEW:** Redetect button for new portals
+- **FIX:** Wild regionals/additionals now update correct pool counts
+- **FIX:** CLR properly clears evolution family display
+
+### v2.18.0 — Regional & Portal Detection
+- **NEW:** Hover-based detection from game icons
+- **NEW:** Pokemon chips with rarity colors
+- **IMPROVED:** Simplified UI with accordion removal
+
+### v2.17.0 — Wild Pokemon Overhaul
+- Wild Pokemon auto-detection (67 families)
+- Wild stars counting fix
 - Auto-scout opponents' wild copies
 - PVE round auto-detection
 - Main calculator MAXED/IMPOSSIBLE/DANGER warnings
 - Fixed contested detection to exclude self
 - Name normalization for regional forms
 
-### v2.16.0
+### v2.16.0 — Counter Intelligence & Team Tracker
 - Counter Intelligence panel
 - Team Tracker with multi-target support
 - Shop flash alerts
@@ -97,4 +132,4 @@ Built for the Pokemon Auto Chess community 🎮
 
 ## License
 
-MIT License - feel free to fork and modify!
+MIT License — feel free to fork and modify!
