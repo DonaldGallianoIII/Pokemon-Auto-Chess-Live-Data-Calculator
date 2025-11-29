@@ -2,7 +2,7 @@
 
 A Chrome extension that provides real-time probability calculations for [Pokemon Auto Chess](https://pokemon-auto-chess.com).
 
-![Version](https://img.shields.io/badge/version-2.19.0-blue)
+![Version](https://img.shields.io/badge/version-3.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Features
@@ -33,11 +33,11 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 ### 🌿 Wild Pokemon Support
 - **Auto-detects** all 67 wild Pokemon families
 - **Counts wild stars** automatically (3★ = +3% boost)
-- **Scouts opponents'** wild copies for accurate pool depletion
+- **Per-rarity pool tracking** — accurate probability calculations
 - **PVE round detection** for +5% wild boost
 
 ### ⚡ Live Data
-- Reads game state in real-time
+- Reads game state in real-time (30ms polling)
 - Stage tracking with PVE/PVP indicator
 - Auto-updates as the game progresses
 - Works entirely offline — **zero data transmitted**
@@ -93,13 +93,20 @@ See [PRIVACY.md](PRIVACY.md) for full details.
 
 ## Changelog
 
+### v3.0.0 — Major Release
+- **FIX:** Critical wild pool tracking bug — now tracks per-rarity (was depleting wrong pools)
+- **FIX:** Detection listeners reset properly between games (multi-game sessions work)
+- **NEW:** Synergy bar for mass team building (experimental feature)
+- **NEW:** Experimental features system with unlock
+- **IMPROVED:** MAX polling speed now 30ms
+- **IMPROVED:** Blocker dismiss remembers dismissed Pokemon until they leave shop
+
 ### v2.19.0 — Smart Detection System
 - **NEW:** Slot-based regional/add pick detection with conflict resolution
 - **NEW:** Click-to-confirm when multiple Pokemon match same rarity+types
 - **NEW:** Detection syncs to probability calculations
 - **NEW:** Team Tracker checks regional/additional availability
 - **NEW:** CLR button to clear all state
-- **NEW:** MAX (70ms) polling speed option
 - **NEW:** Redetect button for new portals
 - **FIX:** Wild regionals/additionals now update correct pool counts
 - **FIX:** CLR properly clears evolution family display
