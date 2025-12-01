@@ -7,7 +7,7 @@ Install the PAC Live Data Calculator before it's available on the Chrome Web Sto
 ## Step 1: Download the Extension
 
 1. Go to the [**Pokemon Auto Chess Live Data Calculator ZipFile**](Pokemon%20Auto%20Chess%20Live%20Data%20Calculator%20ZipFile/) folder in this repo
-2. Click on the `.zip` file (e.g., `pac-live-data-v2_17_0-store-ready GITHUB.zip`)
+2. Click on the `.zip` file (e.g., `pac-live-data-v3.1.1.zip`)
 3. Click the **Download** button (or "View raw")
 4. Save the file to your computer
 
@@ -26,7 +26,7 @@ Install the PAC Live Data Calculator before it's available on the Chrome Web Sto
 
 ### Linux
 ```bash
-unzip pac-live-data-v2_17_0-store-ready.zip -d pac-extension
+unzip pac-live-data-v3.1.1.zip
 ```
 
 **After extraction, you should have a folder containing:**
@@ -55,7 +55,7 @@ unzip pac-live-data-v2_17_0-store-ready.zip -d pac-extension
 ## Step 4: Load the Extension
 
 1. Click **"Load unpacked"** (top-left of the extensions page)
-2. Navigate to your **extracted folder** (the one containing `manifest.json`)
+2. Select the **entire unzipped folder**
 3. Click **Select Folder**
 
 ✅ You should now see "Pokemon Auto Chess Live Data Calculator" in your extensions list!
@@ -66,7 +66,7 @@ unzip pac-live-data-v2_17_0-store-ready.zip -d pac-extension
 
 1. Go to [**pokemon-auto-chess.com**](https://pokemon-auto-chess.com)
 2. Start or join a game
-3. Press **Alt + Shift + P** to open the calculator
+3. Press **ALT + Shift + P** to open the calculator
 4. Enter your player name in settings
 5. Start tracking!
 
@@ -90,8 +90,9 @@ When a new version is released:
 |---------|----------|
 | "Load unpacked" button not visible | Make sure **Developer mode** is ON |
 | Extension not appearing on game | Refresh the game page (F5) |
+| Calculator won't open with ALT + Shift + P | Click inside the game window first |
 | Data not updating | Check that your player name matches exactly (case-sensitive) |
-| Extension shows error | Make sure you selected the folder containing `manifest.json`, not the ZIP file |
+| Extension shows error | Make sure you selected the unzipped folder, not the ZIP file itself |
 
 ---
 
