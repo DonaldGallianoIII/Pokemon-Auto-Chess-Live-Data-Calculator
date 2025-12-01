@@ -112,7 +112,7 @@ See [PRIVACY.md](PRIVACY.md) for full details.
 - **FIX:** Detection listeners reset properly between games (multi-game sessions work)
 - **NEW:** Synergy bar for mass team building (experimental feature)
 - **NEW:** Experimental features system with unlock
-- **NEW:** Ditto stage-gating (available from Stage 10+)
+- **NEW:** Ditto stage-gating (available from Stage 6+)
 - **IMPROVED:** MAX polling speed now 30ms
 - **IMPROVED:** Blocker dismiss remembers dismissed Pokemon until they leave shop
 
