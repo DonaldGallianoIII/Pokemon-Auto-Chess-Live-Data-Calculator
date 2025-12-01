@@ -2,7 +2,7 @@
 
 A Chrome extension that provides real-time probability calculations for [Pokemon Auto Chess](https://pokemon-auto-chess.com).
 
-![Version](https://img.shields.io/badge/version-3.0.0-blue)
+![Version](https://img.shields.io/badge/version-3.1.1-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Features
@@ -36,6 +36,12 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 - **Per-rarity pool tracking** — accurate probability calculations
 - **PVE round detection** for +5% wild boost
 
+### 🎰 Mono-Type Challenge (Experimental)
+- **Self-imposed challenge mode** — restrict yourself to one Pokemon type
+- **Spin wheel** for random type selection
+- **Shop blockers** prevent purchasing non-matching types
+- 18 types available with color-coded UI
+
 ### ⚡ Live Data
 - Reads game state in real-time (30ms polling)
 - Stage tracking with PVE/PVP indicator
@@ -44,10 +50,10 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 
 ## Installation
 
-### Chrome Web Store (Recommended)
+### Chrome Web Store
 *Coming soon — pending review*
 
-### Manual Installation (Beta Testing)
+### Manual Installation
 
 1. **Download** the latest ZIP from [Releases](../../releases)
 2. **Extract** the ZIP to a folder
@@ -55,13 +61,13 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 4. Enable **Developer mode** (top-right toggle)
 5. Click **"Load unpacked"** and select the extracted folder
 6. Navigate to [pokemon-auto-chess.com](https://pokemon-auto-chess.com)
-7. Press **ALT + Shift + P** to toggle the calculator
+7. Press **P** to toggle the calculator
 
 ## Usage
 
 1. Go to [pokemon-auto-chess.com](https://pokemon-auto-chess.com)
 2. Start or join a game
-3. Press **ALT + Shift + P** to toggle the calculator overlay
+3. Press **P** to toggle the calculator overlay
 4. Enter your player name for personalized tracking
 5. Select your target Pokemon and rarity
 6. **Hover** the regional/add pick icons to detect Pokemon
@@ -71,7 +77,7 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 
 | Control | Action |
 |---------|--------|
-| ALT + Shift + P | Toggle calculator overlay |
+| P | Toggle calculator overlay |
 | CLR button | Clear all state (target, team, detection) |
 | Redetect button | Reset detection for new portal |
 | Hover game icons | Detect regional/add pick Pokemon |
@@ -93,11 +99,20 @@ See [PRIVACY.md](PRIVACY.md) for full details.
 
 ## Changelog
 
+### v3.1.1 — Mono-Type Challenge + Manifest Cleanup
+- **NEW:** Mono-Type Challenge mode (experimental) — restrict shop to one Pokemon type
+- **NEW:** Spin wheel for random type selection with animation
+- **NEW:** Shop blockers with fixed positioning (blocks tooltips properly)
+- **FIX:** Removed unnecessary `host_permissions` from manifest
+- **FIX:** Petilil, Cubone, Exeggcute, Slowpoke now correctly detected as Add Picks
+- **FIX:** Galarian Slowpoke regional detection
+
 ### v3.0.0 — Major Release
 - **FIX:** Critical wild pool tracking bug — now tracks per-rarity (was depleting wrong pools)
 - **FIX:** Detection listeners reset properly between games (multi-game sessions work)
 - **NEW:** Synergy bar for mass team building (experimental feature)
 - **NEW:** Experimental features system with unlock
+- **NEW:** Ditto stage-gating (available from Stage 10+)
 - **IMPROVED:** MAX polling speed now 30ms
 - **IMPROVED:** Blocker dismiss remembers dismissed Pokemon until they leave shop
 
