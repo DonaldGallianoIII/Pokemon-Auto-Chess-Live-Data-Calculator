@@ -61,13 +61,13 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 4. Enable **Developer mode** (top-right toggle)
 5. Click **"Load unpacked"** and select the extracted folder
 6. Navigate to [pokemon-auto-chess.com](https://pokemon-auto-chess.com)
-7. Press **P** to toggle the calculator
+7. Press **ALT + Shift + P** to toggle the calculator
 
 ## Usage
 
 1. Go to [pokemon-auto-chess.com](https://pokemon-auto-chess.com)
 2. Start or join a game
-3. Press **P** to toggle the calculator overlay
+3. Press **ALT + Shift + P** to toggle the calculator overlay
 4. Enter your player name for personalized tracking
 5. Select your target Pokemon and rarity
 6. **Hover** the regional/add pick icons to detect Pokemon
@@ -77,7 +77,7 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 
 | Control | Action |
 |---------|--------|
-| P | Toggle calculator overlay |
+| ALT + Shift + P | Toggle calculator overlay |
 | CLR button | Clear all state (target, team, detection) |
 | Redetect button | Reset detection for new portal |
 | Hover game icons | Detect regional/add pick Pokemon |
