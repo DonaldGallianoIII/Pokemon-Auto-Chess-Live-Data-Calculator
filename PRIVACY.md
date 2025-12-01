@@ -1,6 +1,6 @@
 # Privacy Policy
 **Pokemon Auto Chess Live Data Calculator**
-*Last updated: November 27, 2025*
+*Last updated: November 30, 2025*
 
 ## Data Collection
 This extension does **not** collect, store, or transmit any personal data.
@@ -11,6 +11,7 @@ The following data is stored locally on your device using browser localStorage:
 - Your in-game player name (for shop flash alerts)
 - Team Tracker target preferences
 - Polling speed preference
+- EULA acceptance status
 
 This data never leaves your device and is not accessible to anyone except you.
 
@@ -33,9 +34,9 @@ This extension makes **zero** network requests. There are:
 ## Permissions
 | Permission | Why It's Needed |
 |------------|-----------------|
-| activeTab | Inject calculator overlay on the active tab |
-| storage | Save your preferences locally |
 | Host (pokemon-auto-chess.com) | Extension only runs on this site |
+
+This extension requests no other permissions. Local preferences are saved using the browser's built-in localStorage API, which requires no special permissions.
 
 ## Contact
 Questions or concerns? Reach me on Discord: **@Deuce222X**
