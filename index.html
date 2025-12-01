@@ -731,7 +731,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-      <div class="badge">✨ v2.19.0 — Smart Pokemon Detection</div>
+      <div class="badge">✨ v3.1.1 — Mono-Type Challenge Mode</div>
       <h1>Pokemon Auto Chess<br><span>Live Data Calculator</span></h1>
       <p>Real-time probability calculations, opponent scouting, and pool tracking. Know your odds before you roll.</p>
       <div class="hero-buttons">
@@ -786,14 +786,14 @@
         </ul>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🎯</div>
-        <h3>Team Tracker</h3>
-        <p>Track multiple targets with real-time status updates.</p>
+        <div class="feature-icon">🎰</div>
+        <h3>Mono-Type Challenge</h3>
+        <p>Self-imposed challenge mode for extra difficulty.</p>
         <ul>
-          <li>Multi-target tracking</li>
-          <li>MAXED / IMPOSSIBLE warnings</li>
-          <li>Regional/Portal availability</li>
-          <li>Priority organization</li>
+          <li>Restrict to one Pokemon type</li>
+          <li>Spin wheel for random selection</li>
+          <li>Shop blockers prevent mistakes</li>
+          <li>18 types with color-coded UI</li>
         </ul>
       </div>
       <div class="feature-card">
@@ -825,7 +825,7 @@
   <section id="install">
     <div class="section-header">
       <h2>Install in 5 Minutes</h2>
-      <p>Manual installation for beta testing while Chrome Web Store review is pending</p>
+      <p>Manual installation while Chrome Web Store review is pending</p>
     </div>
     <div class="install-steps">
       <div class="step">
@@ -917,27 +917,37 @@
       <p>Latest updates and improvements</p>
     </div>
     <div class="changelog-item">
+      <span class="version">v3.1.1</span>
+      <h3>Mono-Type Challenge + Manifest Cleanup</h3>
+      <ul>
+        <li><span class="tag tag-new">NEW</span> Mono-Type Challenge mode (experimental) — restrict shop to one type</li>
+        <li><span class="tag tag-new">NEW</span> Spin wheel for random type selection with animation</li>
+        <li><span class="tag tag-new">NEW</span> Shop blockers with fixed positioning (blocks tooltips)</li>
+        <li><span class="tag tag-fix">FIX</span> Removed unnecessary host_permissions from manifest</li>
+        <li><span class="tag tag-fix">FIX</span> Petilil, Cubone, Exeggcute, Slowpoke Add Pick detection</li>
+        <li><span class="tag tag-fix">FIX</span> Galarian Slowpoke regional detection</li>
+      </ul>
+    </div>
+    <div class="changelog-item">
+      <span class="version">v3.0.0</span>
+      <h3>Major Release — Experimental Features</h3>
+      <ul>
+        <li><span class="tag tag-fix">FIX</span> Critical wild pool tracking — now tracks per-rarity correctly</li>
+        <li><span class="tag tag-new">NEW</span> Synergy bar for mass team building (experimental)</li>
+        <li><span class="tag tag-new">NEW</span> Experimental features system with unlock</li>
+        <li><span class="tag tag-new">NEW</span> Ditto stage-gating (available from Stage 10+)</li>
+        <li><span class="tag tag-improved">IMPROVED</span> MAX polling speed now 30ms</li>
+      </ul>
+    </div>
+    <div class="changelog-item">
       <span class="version">v2.19.0</span>
       <h3>Smart Detection System + Team Availability</h3>
       <ul>
         <li><span class="tag tag-new">NEW</span> Slot-based regional/add pick detection with conflict resolution</li>
-        <li><span class="tag tag-new">NEW</span> Click-to-confirm when multiple Pokemon match (e.g., Pidgey/Starly/Pidove)</li>
-        <li><span class="tag tag-new">NEW</span> Detection syncs to probability calculations (wild Pokemon handled correctly)</li>
-        <li><span class="tag tag-new">NEW</span> Team Tracker now checks regional/additional availability</li>
-        <li><span class="tag tag-new">NEW</span> CLR button to clear all state (target, team, detection)</li>
-        <li><span class="tag tag-new">NEW</span> MAX (70ms) polling speed option</li>
-        <li><span class="tag tag-new">NEW</span> Redetect button for new portals</li>
-        <li><span class="tag tag-fix">FIX</span> Wild regionals/additionals now update correct pool counts</li>
-        <li><span class="tag tag-fix">FIX</span> CLR now properly clears evolution family display</li>
-      </ul>
-    </div>
-    <div class="changelog-item">
-      <span class="version">v2.18.0</span>
-      <h3>Regional & Portal Detection</h3>
-      <ul>
-        <li><span class="tag tag-new">NEW</span> Hover-based detection from game icons</li>
-        <li><span class="tag tag-new">NEW</span> Pokemon chips with rarity colors</li>
-        <li><span class="tag tag-improved">IMPROVED</span> Simplified UI with accordion removal</li>
+        <li><span class="tag tag-new">NEW</span> Click-to-confirm when multiple Pokemon match</li>
+        <li><span class="tag tag-new">NEW</span> Detection syncs to probability calculations</li>
+        <li><span class="tag tag-new">NEW</span> Team Tracker checks regional/additional availability</li>
+        <li><span class="tag tag-new">NEW</span> CLR button to clear all state</li>
       </ul>
     </div>
     <div class="changelog-item">
@@ -945,22 +955,10 @@
       <h3>Wild Pokemon Overhaul + Auto Everything</h3>
       <ul>
         <li><span class="tag tag-new">NEW</span> Wild Pokemon auto-detection (67 families)</li>
-        <li><span class="tag tag-fix">FIX</span> Wild stars counting (was counting units, now counts stars correctly)</li>
-        <li><span class="tag tag-new">NEW</span> Auto-scout opponents' wild copies for pool depletion</li>
+        <li><span class="tag tag-fix">FIX</span> Wild stars counting (counts stars, not units)</li>
+        <li><span class="tag tag-new">NEW</span> Auto-scout opponents' wild copies</li>
         <li><span class="tag tag-new">NEW</span> PVE round auto-detection with stage display</li>
         <li><span class="tag tag-new">NEW</span> Main calculator MAXED/IMPOSSIBLE/DANGER warnings</li>
-        <li><span class="tag tag-fix">FIX</span> Contested detection now excludes yourself</li>
-        <li><span class="tag tag-fix">FIX</span> Name normalization for regional forms (Alolan, Galarian, etc.)</li>
-      </ul>
-    </div>
-    <div class="changelog-item">
-      <span class="version">v2.16.0</span>
-      <h3>Counter Intelligence & Team Tracker</h3>
-      <ul>
-        <li><span class="tag tag-new">NEW</span> Counter Intelligence panel — see all 8 players</li>
-        <li><span class="tag tag-new">NEW</span> Team Tracker with multi-target support</li>
-        <li><span class="tag tag-new">NEW</span> Shop flash alerts when targets appear</li>
-        <li><span class="tag tag-improved">IMPROVED</span> Keyboard input protection</li>
       </ul>
     </div>
   </section>
