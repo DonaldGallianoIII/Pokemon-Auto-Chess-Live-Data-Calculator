@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Pokemon Auto Chess Live Data Calculator**  
-*Last updated: December 1, 2025*
+*Last updated: December 7, 2025*
 
 ## Data Collection
 
@@ -15,8 +15,10 @@ The following data is stored locally on your device using browser localStorage:
 - Your in-game player name (for shop flash alerts)
 - Team Tracker target preferences
 - Polling speed preference
+- Roll Luck / Shop History session data
 - EULA acceptance status
 - Experimental features unlock status
+- Mono-Type Challenge preferences
 
 This data never leaves your device and is not accessible to anyone except you.
 
@@ -27,6 +29,7 @@ This extension reads publicly available game state data to provide probability c
 - Pokemon on all players' boards, benches, and shops
 - Current stage number
 - Player level
+- Shop contents for roll tracking
 
 This data is processed entirely within your browser and is **never transmitted** anywhere.
 
@@ -68,5 +71,5 @@ Any changes to this policy will be reflected here with an updated date.
 
 ---
 
-**Version:** 3.1.1  
+**Version:** 3.2.1  
 **Developer:** Galliano Games
