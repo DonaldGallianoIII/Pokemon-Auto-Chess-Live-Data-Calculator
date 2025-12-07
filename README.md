@@ -2,7 +2,7 @@
 
 A Chrome extension that provides real-time probability calculations for [Pokemon Auto Chess](https://pokemon-auto-chess.com).
 
-![Version](https://img.shields.io/badge/version-3.1.1-blue)
+![Version](https://img.shields.io/badge/version-3.2.1-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Features
@@ -24,6 +24,33 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 - **Contested detection** — warns when opponents are targeting the same Pokemon
 - **Flash alerts** when your target appears in YOUR shop
 
+### 🎰 Roll Luck / Shop History Panel
+- **Live tab** — real-time roll tracking per player
+- **Analytics tab** with:
+  - Overall Luck Score gauge (-100 to +100)
+  - Rarity distribution charts
+  - Level breakdown grid
+  - Lucky/Unlucky Pokemon highlights
+  - Ditto appearance stats
+  - Wild Pokemon sightings
+  - Narrative summary of your session
+- Data persists across sessions (localStorage)
+
+### 🎣 Fishing Calculator
+- **Rod selection** — Old, Good, Super with base odds
+- **Remoraid pre-roll logic** — `(33% Mantine) OR (Wild%)`
+- **Auto-detects** Mantine/Mantyke on board
+- **Auto-detects** Octillery → locks Remoraid fishing
+- **Remoraid count** display (X/3 held)
+- **Adjusted odds** for all fish (accounts for Remoraid pre-roll)
+- **Live updating** at polling speed
+
+### 🔥 MLG Mode (Experimental)
+- Triggers on 3★ evolutions (combining 3 Pokemon)
+- **Visual chaos:** Hitmarkers, Doritos, Illuminati triangles, Weed leaves, Snoop Dogg, 360 spinning text, Lens flares, Screen shake
+- **Random callouts:** "MOM GET THE CAMERA", "OH BABY A TRIPLE", "WOMBO COMBO", etc.
+- Toggle on/off from experimental panel
+
 ### 🎯 Team Tracker
 - Track multiple target Pokemon simultaneously
 - **MAXED / IMPOSSIBLE / DANGER** warnings for each target
@@ -36,14 +63,14 @@ A Chrome extension that provides real-time probability calculations for [Pokemon
 - **Per-rarity pool tracking** — accurate probability calculations
 - **PVE round detection** for +5% wild boost
 
-### 🎰 Mono-Type Challenge (Experimental)
+### 🎲 Mono-Type Challenge (Experimental)
 - **Self-imposed challenge mode** — restrict yourself to one Pokemon type
 - **Spin wheel** for random type selection
 - **Shop blockers** prevent purchasing non-matching types
 - 18 types available with color-coded UI
 
 ### ⚡ Live Data
-- Reads game state in real-time (30ms polling)
+- Reads game state in real-time (10ms–350ms polling)
 - Stage tracking with PVE/PVP indicator
 - Auto-updates as the game progresses
 - Works entirely offline — **zero data transmitted**
@@ -98,6 +125,25 @@ See [PRIVACY.md](PRIVACY.md) for full details.
 - **Issues:** [GitHub Issues](../../issues)
 
 ## Changelog
+
+### v3.2.1 — Fishing Panel + Live Updates
+- **NEW:** Fishing Calculator with rod selection (Old, Good, Super)
+- **NEW:** Remoraid pre-roll logic: `(33% Mantine) OR (Wild%)`
+- **NEW:** Auto-detects Mantine/Mantyke on board
+- **NEW:** Auto-detects Octillery → locks Remoraid fishing
+- **NEW:** Shop slot mapping for diff detection
+- **IMPROVED:** Live updating at polling speed
+
+### v3.2.0 — Roll Luck Tracker + MLG Mode
+- **NEW:** Roll Luck / Shop History Panel with Live + Analytics tabs
+- **NEW:** Overall Luck Score gauge (-100 to +100)
+- **NEW:** Rarity distribution charts, level breakdown grid
+- **NEW:** Lucky/Unlucky Pokemon highlights, Ditto & Wild sighting stats
+- **NEW:** Narrative summary of your session
+- **NEW:** MLG Mode (experimental) — visual chaos on 3★ evolutions
+- **NEW:** "Ultra Giga Computer God (10ms)" polling option
+- **IMPROVED:** Default polling 500ms → 350ms (~30% faster)
+- **REMOVED:** 2s and 5s slow polling options
 
 ### v3.1.1 — Mono-Type Challenge + Manifest Cleanup
 - **NEW:** Mono-Type Challenge mode (experimental) — restrict shop to one Pokemon type
