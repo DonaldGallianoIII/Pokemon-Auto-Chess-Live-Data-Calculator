@@ -412,6 +412,7 @@
     .tag-new { background: rgba(16, 185, 129, 0.2); color: var(--success); }
     .tag-fix { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
     .tag-improved { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+    .tag-removed { background: rgba(148, 163, 184, 0.2); color: var(--text-muted); }
 
     /* Troubleshooting */
     .troubleshoot-wrapper {
@@ -731,7 +732,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
-      <div class="badge">✨ v3.1.1 — Mono-Type Challenge Mode</div>
+      <div class="badge">✨ v3.2.1 — Fishing Panel + Live Updates</div>
       <h1>Pokemon Auto Chess<br><span>Live Data Calculator</span></h1>
       <p>Real-time probability calculations, opponent scouting, and pool tracking. Know your odds before you roll.</p>
       <div class="hero-buttons">
@@ -787,6 +788,39 @@
       </div>
       <div class="feature-card">
         <div class="feature-icon">🎰</div>
+        <h3>Roll Luck Tracker</h3>
+        <p>Track your session luck with detailed analytics.</p>
+        <ul>
+          <li>Overall Luck Score (-100 to +100)</li>
+          <li>Rarity distribution charts</li>
+          <li>Lucky/Unlucky Pokemon highlights</li>
+          <li>Ditto & Wild sighting stats</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎣</div>
+        <h3>Fishing Calculator</h3>
+        <p>Precise odds for the Remoraid fishing mechanic.</p>
+        <ul>
+          <li>Rod selection with base odds</li>
+          <li>Auto-detects Mantine/Octillery</li>
+          <li>Remoraid pre-roll logic</li>
+          <li>Live updating at poll speed</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔥</div>
+        <h3>MLG Mode</h3>
+        <p>Visual chaos on 3★ evolutions (experimental).</p>
+        <ul>
+          <li>Hitmarkers, Doritos, Illuminati</li>
+          <li>Snoop Dogg, lens flares, screen shake</li>
+          <li>Random callouts</li>
+          <li>Toggle on/off anytime</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎲</div>
         <h3>Mono-Type Challenge</h3>
         <p>Self-imposed challenge mode for extra difficulty.</p>
         <ul>
@@ -916,6 +950,37 @@
       <h2>What's New</h2>
       <p>Latest updates and improvements</p>
     </div>
+
+    <div class="changelog-item">
+      <span class="version">v3.2.1</span>
+      <h3>Fishing Panel + Live Updates</h3>
+      <ul>
+        <li><span class="tag tag-new">NEW</span> Fishing Calculator with rod selection (Old, Good, Super)</li>
+        <li><span class="tag tag-new">NEW</span> Remoraid pre-roll logic: (33% Mantine) OR (Wild%)</li>
+        <li><span class="tag tag-new">NEW</span> Auto-detects Mantine/Mantyke on board</li>
+        <li><span class="tag tag-new">NEW</span> Auto-detects Octillery → locks Remoraid fishing</li>
+        <li><span class="tag tag-new">NEW</span> Shop slot mapping for diff detection</li>
+        <li><span class="tag tag-improved">IMPROVED</span> Live updating at polling speed</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item">
+      <span class="version">v3.2.0</span>
+      <h3>Roll Luck Tracker + MLG Mode</h3>
+      <ul>
+        <li><span class="tag tag-new">NEW</span> Roll Luck / Shop History Panel with Live + Analytics tabs</li>
+        <li><span class="tag tag-new">NEW</span> Overall Luck Score gauge (-100 to +100)</li>
+        <li><span class="tag tag-new">NEW</span> Rarity distribution charts, level breakdown grid</li>
+        <li><span class="tag tag-new">NEW</span> Lucky/Unlucky Pokemon highlights</li>
+        <li><span class="tag tag-new">NEW</span> Ditto appearances & Wild Pokemon sighting stats</li>
+        <li><span class="tag tag-new">NEW</span> Narrative summary of your session</li>
+        <li><span class="tag tag-new">NEW</span> MLG Mode (experimental) — visual chaos on 3★ evolutions</li>
+        <li><span class="tag tag-new">NEW</span> "Ultra Giga Computer God (10ms)" polling option</li>
+        <li><span class="tag tag-improved">IMPROVED</span> Default polling 500ms → 350ms (~30% faster)</li>
+        <li><span class="tag tag-removed">REMOVED</span> 2s and 5s slow polling options</li>
+      </ul>
+    </div>
+
     <div class="changelog-item">
       <span class="version">v3.1.1</span>
       <h3>Mono-Type Challenge + Manifest Cleanup</h3>
@@ -928,6 +993,7 @@
         <li><span class="tag tag-fix">FIX</span> Galarian Slowpoke regional detection</li>
       </ul>
     </div>
+
     <div class="changelog-item">
       <span class="version">v3.0.0</span>
       <h3>Major Release — Experimental Features</h3>
@@ -939,6 +1005,7 @@
         <li><span class="tag tag-improved">IMPROVED</span> MAX polling speed now 30ms</li>
       </ul>
     </div>
+
     <div class="changelog-item">
       <span class="version">v2.19.0</span>
       <h3>Smart Detection System + Team Availability</h3>
@@ -950,6 +1017,7 @@
         <li><span class="tag tag-new">NEW</span> CLR button to clear all state</li>
       </ul>
     </div>
+
     <div class="changelog-item">
       <span class="version">v2.17.0</span>
       <h3>Wild Pokemon Overhaul + Auto Everything</h3>
