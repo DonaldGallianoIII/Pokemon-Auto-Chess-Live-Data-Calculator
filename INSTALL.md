@@ -7,7 +7,7 @@ Install the PAC Live Data Calculator before it's available on the Chrome Web Sto
 ## Step 1: Download the Extension
 
 1. Go to the [**Pokemon Auto Chess Live Data Calculator ZipFile**](Pokemon%20Auto%20Chess%20Live%20Data%20Calculator%20ZipFile/) folder in this repo
-2. Click on the `.zip` file (e.g., `pac-live-data-v3.1.1.zip`)
+2. Click on the `.zip` file (e.g., `pac-live-data-v3.2.1.zip`)
 3. Click the **Download** button (or "View raw")
 4. Save the file to your computer
 
@@ -26,10 +26,11 @@ Install the PAC Live Data Calculator before it's available on the Chrome Web Sto
 
 ### Linux
 ```bash
-unzip pac-live-data-v3.1.1.zip
+unzip pac-live-data-v3.2.1.zip
 ```
 
 **After extraction, you should have a folder containing:**
+
 ```
 ├── manifest.json
 ├── content/
